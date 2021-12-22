@@ -5,8 +5,274 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Example</title>
 	<script src="https://cdn-tailwindcss.vercel.app/"></script>
+	<script src="tailwind.config.js"></script>
+	<link rel="stylesheet" href="styles.css" type="text/css" media="all">
 </head>
+<nav>
+	  <div class="flex justify-between items-center p-10">
+		<img src="images/sbs-logo.png" alt="step by step pediactrics" class="flex-start w-40 flex-shrink-0">
+		<ul class="hidden md:flex flex-end">
+		  <li class="px-4 ml-5 py-2 bg-corn-yellow"><a href="#">Home</a></li>
+		  <li class="px-4 ml-5 py-2"><a href="/about">About</a></li>
+		  <li class="px-4 ml-5 py-2 whitespace-nowrap"><a href="/new-patients">New Patients</a></li>
+		  <li class="px-4 ml-5 py-2"><a href="/links">Links</a></li>
+		  <li class="px-4 ml-5 py-2"><a href="/contact">Contact</a></li>
+		</ul>		
+		<div class="sm:block md:hidden bg-yellow-300 p-3 flex-end text-center">
+			<a href="#">
+				<span>M</span>
+			</a>
+		</div>
+	  </div>
+</nav>
 <body>
+
+<section class="max-w-screen-2xl mx-auto relative">
+		<div class="flex text-center justify-center">
+		  <div class="w-48 absolute float-left -left-0 -bottom-48 -z-10 md:-bottom-36 md:left-8">
+				<picture>
+					<source media="(max-width:767px)" srcset="Images/hero-shapes-mobile.svg">
+					<img src="images/hero-shapes-desktop.svg" alt="hero-shapes">
+				</picture>
+			</div>
+		  <div class="w-11/12 md:w-8/12">
+		  <h1 class="text-4xl font-serif font-medium my-8">We walk <span class="bg-gradient-to-b from-transparent to-sun-shade">Step By Step</span> with our clients through childhood.</h1>
+			  <button class="bg-niagara-green text-white py-2 px-10 mb-8 uppercase hover:opacity-80 transition duration-200">Schedule Appointment<i class="before:absolute before:bg-"></button>	
+		  </div>
+		  <div class="w-6/12 absolute -top-48 right-0 -z-10">
+				  <picture>
+					  <source media="(max-width:1023px) and (min-width:768px)" srcset="Images/hero-bg-tablet.png">
+					  <source media="(max-width:767px)" srcset="Images/hero-bg-mobile.png">
+					  <img src="Images/hero-desktop.png" alt="background-feet">
+				  </picture>
+		  </div>
+		</div>
+</section>
+
+<section class="my-40">
+	  <div class="max-w-screen-2xl mx-auto md:flex">
+		<div class="h-80 bg-gray-300 bg-cover md:flex-1 md:-mr-20 md:-translate-y-20"></div>
+		<div class="z-20 md:w-7/12 bg-slate-blue text-white p-6 md:p-20 mx-4 md:mx-0 -my-14 md:my-0">
+		  <div class="flex items-center">
+				  <div class="bg-corn-yellow h-3 w-3 mr-3"></div>
+				  <h3 class="">Our Mission</h3>	
+			</div>
+		  <p class="mt-5">Step By Step Pediatrics, LLC strives to provide <strong>excellent and personal medical care</strong> to our pediatric patients in a clean, safe, and friendly environment.</p>
+		  <p class="mt-5">We treat each of our families professionally while attempting to <strong>maintain the guidelines set forth by the American Academy of Pediatrics</strong>. We also attempt to adhere to the guidelines of HCFA, CLIA, HIPAA, and numerous health insurance plans.</p>
+		  <a class="mt-5 flex items-center uppercase font-bold" href="#">
+			<span class="mr-3 hover:opacity-80 transition duration-200">Contact Us</span>
+			<span>&raquo;</span>
+		  </a>
+		</div>
+	  </div>
+</section>	
+
+<section class="max-w-screen-2xl mx-auto mx-4">
+	<div class="justify-center">
+		<h3 class="text-lg text-center mb-8">We emphasize in preventative healthcare.</h3>
+		<ul class="flex flex-col md:flex-row justify-center">
+			<li class="flex md:flex-col bg-whisper-gray w-auto h-48 p-4 items-center md:w-1/6 md:mx-4 md:text-center md:py-4 justify-items-center">
+				<img class="w-16 mr-10 md:mr-0 md:mb-6 md:mt-2" src="Images/nutrition.svg" alt="Nutrition icon">
+				<h6>Nutrition</h6>
+			</li>
+			<li class="flex md:flex-col bg-whisper-gray w-auto h-48 p-4 items-center my-4 md:my-0 md:w-1/6 md:mx-4 md:text-center md:py-4 justify-items-center">
+				<img class="w-16 mr-10 md:mr-0 md:mb-6 md:mt-2" src="Images/sports.svg" alt="bike helmet & sports safety icon">
+				<h6>Bike helmet & Sports Safety</h6>
+			</li>
+			<li class="flex md:flex-col bg-whisper-gray w-auto h-48 p-4 items-center md:w-1/6 md:mx-4 md:text-center md:py-4 justify-items-center">
+				<img class="w-16 mr-10 md:mr-0 md:mb-6 md:mt-2" src="Images/seat-belt.svg" alt="car seats & safety belts icon">
+				<h6>Car Seats & Safety Belts</h6>
+			</li>
+			<li class="flex md:flex-col bg-whisper-gray w-auto h-48 p-4 items-center my-4 md:my-0 md:w-1/6 md:mx-4 md:text-center md:py-4 justify-items-center">
+				<img class="w-16 mr-10 md:mr-0 md:mb-6 md:mt-2" src="Images/growth.svg" alt="growth & development icon">
+				<h6>Growth & Development</h6>
+			</li>
+			<li class="flex md:flex-col bg-whisper-gray w-auto h-48 p-4 items-center md:w-1/6 md:mx-4 md:text-center md:py-4 justify-items-center">
+				<img class="w-16 mr-10 md:mr-0 md:mb-6 md:mt-2" src="Images/vaccination.svg" alt="vaccinations icon">
+				<h6>Vaccinations</h6>
+			</li>
+		</ul>	
+	</div>	
+</section>
+
+<section class="my-40">
+	  <div class="max-w-screen-2xl mx-auto md:flex md:items-center">
+		<div class="flex-col order-1">
+			<div class="z-20 relative order-1">
+				<picture>
+					<source media="(max-width:991px) and (min-width:768px)" srcset="Images/experience-circle-tablet.svg">
+					<source media="(max-width:767px)" srcset="Images/experience-circle-mobile.svg">
+					<img src="Images/experience-circle.svg" class="circle" alt="orange border circle">
+				</picture>
+			</div>
+			<div class="w-80 h-80 mx-auto -mb-12 z-20 relative md:mb-0 md:w-72 md:h-72 lg:w-96 lg:h-96 md:-ml-24 rounded-full order-1 bg-gray-300 bg-cover"></div>
+			<div class="z-20 relative order-1">
+				<picture>
+					<source media="(max-width:991px) and (min-width:768px)" srcset="Images/experience-square-tablet.svg">
+					<source media="(max-width:767px)" srcset="Images/experience-square-mobile.svg">
+					<img src="Images/experience-square.svg" class="square" alt="red square">
+				</picture>
+			</div>
+		</div>
+		<div class="md:w-3/4 lg:w-8/12 bg-maya-blue text-white p-6 pt-24 md:p-16 md:pr-40 lg:p-20 lg:pr-72 mx-4 md:mx-0 -my-14 md:my-0">
+			<div class="flex items-center">
+				<div class="bg-red-orange h-3 w-3 mr-3"></div>
+				<h3 class="">Over 20 Years of Experience</h3>	
+			</div>
+		  <p class="mt-5">Anne J. Stump, MD, FAAP and Chrissa Collings, MD, FAAP have practiced pediatric medicine together for <strong>nearly 20 years.</strong> Krista Santos, MD, FAAP joined our office more recently.</p>
+		  <p class="mt-5">All 3 Pediatricians have completed 4 years of college education, 4 years of medical school, 3 years of pediatric residency and <strong>passed specialty board exams to become Fellows of the American Academy of Pediatrics.</strong> We also participate in continuing medical education to enhance our pediatric skills.</p>
+		  <a class="mt-5 flex items-center uppercase font-bold" href="#">
+			<span class="mr-3">more about us</span>
+			<span>&raquo;</span>
+		  </a>
+		</div>
+	  </div>
+</section>
+
+<section class="max-w-screen-2xl mx-auto">
+	<div class="slideshow-container">
+		<div class="w-1/12">
+		</div>
+		<div class="w-10/12 testimonial text-center">
+			<h2><q>They love the atmosphere there and are never afraid to see the doctor!</q></h2>
+			<h4><strong>John Doe</strong></h4>
+		</div>
+		<div class="w-1/12">
+		</div>
+	</div>
+	<div class="col-12 col-s-12 pagination">
+			<div class="col-3 col-s-3">
+			</div>
+			<div class="col-2 col-s-2">
+				<a class="prev" onclick="plusSlides(-1)">
+				<svg width="56px" height="14px" viewBox="0 0 56 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="Desktop-HD" transform="translate(-583.000000, -2846.000000)" fill="#FF5353">
+								<path d="M625,2846 L639,2853 L625,2860 L625,2854 L583,2854 L583,2852 L625,2852 L625,2846 Z" id="Combined-Shape-Copy" transform="translate(611.000000, 2853.000000) scale(-1, 1) translate(-611.000000, -2853.000000) "></path>
+							</g>
+						</g>
+					</svg>
+				</a>
+			</div>
+			<div class="col-2 col-s-2 dot-container">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+			</div>
+			<div class="col-2 col-s-2">
+				<a class="next" onclick="plusSlides(1)">
+				<svg width="56px" height="14px" viewBox="0 0 56 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g id="Desktop-HD" transform="translate(-801.000000, -2846.000000)" fill="#FF5353">
+							<path d="M843,2846 L857,2853 L843,2860 L843,2854 L801,2854 L801,2852 L843,2852 L843,2846 Z" id="Combined-Shape"></path>
+						</g>
+					</g>
+				</svg>
+				</a>
+			</div>
+			<div class="col-3 col-s-3">
+			</div>
+		</div>	
+</section>
+
+<section class="my-40">
+		<div class="max-w-screen-2xl mx-auto md:flex">
+			<div class="h-80 bg-gray-300 bg-cover md:flex-1 md:-mr-20 md:-translate-y-20"></div>
+			<div class="z-20 md:w-7/12 bg-niagara-green text-white p-6 md:p-20 mx-4 md:mx-0 -my-14 md:my-0">
+				<div class="flex items-center">
+						<div class="bg-sun-shade h-3 w-3 mr-3"></div>
+						<h3 class="">Our Location</h3>	
+					</div>
+			  <p class="mt-5">Step By Step Pediatrics is located at: 
+				  <strong>6920 Parkdale Place, suite #109, 	Indianapolis, IN 46254.</strong>
+				  <br>
+				  <br>
+				  We are conveniently located in Bldg I of the Eagle Highlands Methodist Medical Plaza on Eagle Highlands Parkway just northwest of 465 & 38th St on the west side of suburban Indianapolis and Speedway.
+				  The medical complex offers adjacent lab, x-ray, & outpatient medical facilities & services.</p>
+			  <a class="mt-5 flex items-center uppercase font-bold" href="#">
+				<span class="mr-3 hover:opacity-80 transition duration-200">Get Directions</span>
+				<span>&raquo;</span>
+			  </a>
+			</div>
+		</div>
+</section>
+
+<section>
+	<div class="max-w-screen-2xl mx-auto md:px-20 px-4">
+		<h3 class="text-lg text-center mb-8">Our Office Hours</h3>
+		<div class="md:flex justify-between">
+			<div class="flex flex-row md:w-1/2 bg-whisper-gray w-auto h-40 p-4 md:mx-3 items-center">
+				<img class="w-16" src="Images/calendar.svg" alt="calendar icon">
+				<div class="ml-5">	
+					<h6>Normal Business Hours</h6>
+					<p>M - F from 8:30 am until 4:30 pm.
+					<br>
+					We are also open during normal lunch hour.</p>
+				</div>
+			</div>
+			<div class="flex flex-row md:w-1/2 bg-whisper-gray w-auto h-40 p-4 my-4 md:my-0 md:mx-3 items-center">
+				<img class="w-16" src="Images/emergency-phone.svg" alt="emergency call icon">
+				<div class="ml-5">	
+					<h6>In Case of an Emergency</h6>
+					<p>If the office is closed, a Pediatrician is available for emergency calls at <a href="tel:317.631.3466" target="_blank">317-631-3466.</a></p>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+<footer class="mt-40">
+		<div class="flex flex-col md:flex-row py-4 md:py-10 px-4 md:px-20 bg-slate-blue text-white text-center md:text-left">
+			<div class="w-full md:w-3/12">
+			<a href="#">
+				<picture>
+					<source media="(max-width: 991px) and (min-width:768px)" srcset="Images/footer-tablet-logo.svg">
+					<img src="Images/footer-logo.svg" class="footer-logo" alt="step by step pediatrics">
+				<picture>			
+			</a>
+			</div>
+			<div class="w-full md:w-3/12 my-4 md:my-0">
+				<h6 class="font-bold">Office Hours</h6>
+				<p>M - F 8:30am - 4:30pm
+				<br>
+				We are also open during normal business lunch hour.
+				</p>
+			</div>
+			<div class="w-full md:w-3/12">
+				<a href="https://www.google.com/maps/place/Step+By+Step+Pediatrics,+LLC/@39.8270717,-86.2849417,17z/data=!3m1!4b1!4m5!3m4!1s0x886ca9919c80ba6b:0x1a206aa16e215b35!8m2!3d39.8270717!4d-86.2827477" target="_blank">
+					<address>
+						<h6 class="font-bold">Address</h6>
+						<p>Step By Step Pediatrics
+						<br>
+						6920 Parkdale Place, Ste. #109
+						<br>
+						Indianapolis, IN 46254. 
+						</p>
+					</address>
+				</a>
+				</div>
+			<div class="w-full md:w-3/12 my-4 md:my-0">
+				<h6 class="font-bold">Phone Numbers</h6>
+				<a href="tel:317.328.6800" target="_blank"><p>317-328-6800 Nurse</p></a>
+				<a href="tel:317.328.6802" target="_blank"><p>317-328-6802 Receptionist</p></a>
+				<a href="tel:317.328.6803" target="_blank"><p>317-328-6803 Business office</p></a>
+				<a href="tel:317.631.3466" target="_blank"><p>317-631-3466 Emergency</p></a>
+			</div>
+		</div>
+		<div class="flex flex-col md:flex-row bg-majorelle-blue text-white text-center px-4 md:px-20 py-5">
+			<div class="w-full md:w-1/3">
+				<ul class="flex items-center justify-between uppercase">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">New patients</a></li>
+					<li><a href="#">Links</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="w-full md:w-2/3">
+				<h6 class="md:whitespace-nowrap md:text-right">&copy;2020 Step by Step Pediatrics, LLC     |     <a href="https://www.madebyjetpack.com/" target="_blank">Made By Jetpack</a></h6>
+			</div>
+		</div>
+	</footer>
 	
 </body>
 </html>

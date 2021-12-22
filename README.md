@@ -1,1 +1,0 @@
-Feel free to play around at the Tailwind Sandbox: https://play.tailwindcss.com/
